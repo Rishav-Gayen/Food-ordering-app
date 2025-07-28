@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="index.css">
+    <title>Jimmy's Diner</title>
+</head>
+<body>
+    <div class="container">
+        <header class="app__header">
+                <h1 class="header__heading">Jimmy's Diner</h1>
+                <p class="header__tagline">The best burgers and pizzas in town.</p>
+        </header>
+    </div>
+    <div class="container">
+        <main class="app__main">
+            <div class="main__menu-items" id="menu-items">
+                <!-- Menu Item -->
+                <div class="menu__item flex space-between items-center">
+                    <div class="menu__content flex items-center">
+                        <div class="menu__img">
+                            🍕
+                        </div>
+                        <div class="menu__text flex-col">
+                            <h2 class="menu__item-head">Pizza</h2>
+                            <p class="menu__item-desc">Pepperoni, Mushroom, Mozarella</p>
+                            <p class="menu__item-price">$14</p>
+                        </div>
+                    </div>
+
+                    <div class="menu__button">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                </div>
+            </div>
+
+            <section class="app__cart flex-col" id="app__cart">
+            </section>
+        </main>
+    </div>
+
+    <aside class="app__modal" data-modal="modal">
+        <div class="app__modal--inner flex-col">
+            <h2>Enter your Details</h2>
+
+            <form class="flex-col modal__form" id="modal__form">
+                <input class="form-input" type="text" id="name" name="name" placeholder="Enter card name" required>
+                <input class="form-input" type="text" id="credit-card-no" name="credit-card-no" placeholder="Enter card no" required>
+                <input class="form-input" type="number" name="cvv" id="cvv" placeholder="Enter Cvv" required>
+
+                <button class="cart__complete" id="pay" type="submit">Pay</button>
+            </form>
+        </div>
+    </aside>
+
+
+    <div class="rating-modal-overlay" id="ratingModal">
+            <div class="rating-modal">
+                <h2>Rate Your Experience</h2>
+                <p>How was your experience with us?</p>
+
+            <!-- Star Rating -->
+                <div class="star-rating" id="starRating">
+                    <i class="fa-regular fa-star" data-value="1"></i>
+                    <i class="fa-regular fa-star" data-value="2"></i>
+                    <i class="fa-regular fa-star" data-value="3"></i>
+                    <i class="fa-regular fa-star" data-value="4"></i>
+                    <i class="fa-regular fa-star" data-value="5"></i>
+                </div>
+
+            <!-- Buttons -->
+                <div class="modal-buttons">
+                    <button id="submitRating">Submit</button>
+                    <button id="closeModal" class="secondary">Cancel</button>
+                </div>
+            </div>
+    </div>
+    <script src="index.js" type="module"></script>
+</body>
+</html>
