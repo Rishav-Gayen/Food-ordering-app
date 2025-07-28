@@ -171,28 +171,7 @@ body {
 }
 
 
-@media screen and (max-width: 500px) {
-    .header__heading, .header__tagline {
-        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
-    }
 
-    .main__menu-items {
-        padding: 3rem;
-    }
-
-    .menu__img {
-        font-size: 5rem;
-    }
-
-    .menu__button {
-        font-size: 1rem;
-        padding: 0.5rem;
-    }
-
-    .menu__content {
-        font-size: 1.4rem;
-    }
-}
 
 
 .app__modal {
@@ -305,5 +284,32 @@ body {
     opacity: 1;
     transform: scale(1);
   }
+}
+
+@media screen and (max-width: 500px) {
+    .header__heading, .header__tagline {
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    }
+
+    .main__menu-items {
+        padding: 3rem;
+    }
+
+    .menu__img {
+        font-size: 5rem;
+    }
+
+    .menu__button {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+
+    .menu__content {
+        font-size: 1.4rem;
+    }
+
+    .order-notification {
+        font-size: 3rem;
+    }
 }
 
